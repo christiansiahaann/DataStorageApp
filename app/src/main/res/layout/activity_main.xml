@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Text"
+        android:id="@+id/edit_text"/>
+
+    <Button
+        android:id="@+id/buttonSimpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="simpan"
+        android:text="Simpan File"
+        android:textColor="@color/black"
+        app:backgroundTint="#D3D3D3" />
+
+    <Button
+        android:id="@+id/buttonHapus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="hapus"
+        android:text="Hapus File"
+        app:backgroundTint="#D3D3D3"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/buttonBaca"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Baca File"
+        android:onClick="baca"
+        app:backgroundTint="#D3D3D3"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/text_baca"
+        android:background="@color/colorAccent"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:hint="Hasil Baca File"/>
+
+</LinearLayout>
